@@ -20,6 +20,4 @@ GlowHub is a high-end, interactive website for premium makeup and skincare produ
 - JavaScript (vanilla JS for dynamic content, carousel, modal, and cart functionality)
 - Google Fonts (Montserrat)
 
-## File Structure
-
 
