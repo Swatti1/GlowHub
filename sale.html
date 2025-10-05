@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GlowHub — Sale</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo" id="home-logo-3">GlowHub</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="new.html">New</a>
+        <a href="login.html" class="btn-login">Login</a>
+        <button class="cart-btn" id="cart-btn-sale">🛒 <span id="cart-count-sale">0</span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="sale-main container">
+    <h1 class="sale-heading">💥 The Great Sale: Up to 50% Off</h1>
+
+    <section class="viral-carousel-section">
+      <h2>🔥 Viral Products</h2>
+      <div class="viral-viewport">
+        <div id="viral-carousel" class="viral-track"></div>
+      </div>
+      <div id="viral-dots" class="carousel-dots"></div>
+    </section>
+
+    <div class="sale-content-layout">
+      <aside class="filter-sidebar">
+        <h3>Filters</h3>
+        <div class="filter-group">
+          <label for="category-filter-sale">Category</label>
+          <select id="category-filter-sale">
+            <option value="all">All</option>
+            <option value="face">Face</option>
+            <option value="body">Body</option>
+            <option value="hair">Hair</option>
+            <option value="makeup">Makeup</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="skin-type-filter">Skin Type</label>
+          <select id="skin-type-filter">
+            <option value="all">All</option>
+            <option value="dry">Dry</option>
+            <option value="oily">Oily</option>
+            <option value="combination">Combination</option>
+            <option value="sensitive">Sensitive</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="sort-filter">Sort</label>
+          <select id="sort-filter">
+            <option value="price-low-to-high">Price: Low → High</option>
+            <option value="price-high-to-low">Price: High → Low</option>
+            <option value="discount-high-to-low">Discount: High → Low</option>
+            <option value="rating-high-to-low">Rating: High → Low</option>
+            <option value="rating-low-to-high">Rating: Low → High</option>
+          </select>
+        </div>
+
+        <button class="btn-primary" id="apply-filters-sale">Apply</button>
+        <button class="btn-secondary" id="reset-filters-sale">Reset</button>
+      </aside>
+
+      <section class="product-grid-section">
+        <h2>Sale Items</h2>
+        <div id="sale-product-grid" class="product-grid"></div>
+      </section>
+    </div>
+
+        <div id="product-detail-view" class="modal-pdp" aria-hidden="true">
+      <div class="pdp-content container">
+        <button class="close-pdp-btn" id="close-pdp">×</button>
+        <div id="pdp-inner-content" class="pdp-inner"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

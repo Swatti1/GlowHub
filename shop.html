@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GlowHub — Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo" id="home-logo-2">GlowHub</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="new.html">New</a>
+        <a href="sale.html">Sale</a>
+        <a href="login.html" class="btn-login">Login</a>
+        <button class="cart-btn" id="cart-btn-shop">🛒 <span id="cart-count-shop">0</span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="shop-main container">
+    <h1>Shop Products</h1>
+    
+
+    <div class="shop-layout">
+      <aside class="filter-sidebar">
+        <h3>Filters</h3>
+
+        <div class="filter-group">
+          <label for="shop-category">Category</label>
+          <select id="shop-category">
+            <option value="all">All</option>
+            <option value="face">Skincare</option>
+            <option value="body">Bodycare</option>
+            <option value="hair">Haircare</option>
+            <option value="makeup">Makeup</option>
+          </select>
+        </div>
+
+        <div class="filter-group" id="subfilter-wrap">
+          <label for="shop-subtype">Subtype</label>
+          <select id="shop-subtype">
+            <option value="all">All</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="shop-skin">Skin Type</label>
+          <select id="shop-skin">
+            <option value="all">All</option>
+            <option value="dry">Dry</option>
+            <option value="oily">Oily</option>
+            <option value="combination">Combination</option>
+            <option value="sensitive">Sensitive</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="shop-sort">Sort</label>
+          <select id="shop-sort">
+            <option value="price-low-to-high">Price: Low → High</option>
+            <option value="price-high-to-low">Price: High → Low</option>
+            <option value="discount-high-to-low">Discount: High → Low</option>
+            <option value="rating-high-to-low">Rating: High → Low</option>
+            <option value="rating-low-to-high">Rating: Low → High</option>
+          </select>
+        </div>
+
+        <button class="btn-primary" id="shop-apply">Apply</button>
+        <button class="btn-secondary" id="shop-reset">Reset</button>
+      </aside>
+
+      <section class="product-grid-section">
+        <h2>All Products</h2>
+        <div id="shop-product-grid" class="product-grid"></div>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

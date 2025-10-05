@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GlowHub - Your Beauty Destination</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+<div id="loader-overlay">
+    <div class="loader-animation"></div>
+    <div class="loader-logo">GlowHub</div>
+</div>
+
+<main id="main-content" style="display: none;">
+
+<header>
+    <nav class="container">
+        <div class="logo">GlowHub</div>
+        <button class="hamburger">☰</button>
+        <div class="nav-links">
+            <div class="dropdown">
+                <a href="shop.html">Shop</a>
+                <div class="dropdown-content">
+                    <a href="shop.html?category=skincare">Skincare</a>
+                    <a href="shop.html?category=makeup">Makeup</a>
+                    <a href="shop.html?category=haircare">Haircare</a>
+            </div>
+            </div>
+            <a href="new.html">New</a>
+            <a href="sale.html">Sale</a>
+            <a href="#" class="btn-login" id="open-login">Login</a>
+            <button class="cart-btn">🛒 <span id="cart-count">0</span></button>
+        </div>
+    </nav>
+</header>
+
+<section class="hero-carousel-section">
+    <div class="carousel-container" id="ad-carousel"></div>
+    <div class="carousel-dots" id="carousel-dots"></div>
+</section>
+
+<section class="product-section container" id="featured-products">
+    <h2>Trending Products</h2>
+    <div class="product-carousel-wrapper">
+        <div class="product-carousel" id="product-carousel"></div>
+    </div>
+</section>
+
+<section class="product-section container">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-carousel" id="testimonial-carousel">
+        <div class="testimonial-slide">"GlowHub products have transformed my skin!" - Emily</div>
+        <div class="testimonial-slide">"The warm tones makeup collection is amazing!" - Sophia</div>
+        <div class="testimonial-slide">"Fast shipping and excellent packaging." - Mia</div>
+    </div>
+</section>
+
+<section class="product-section container">
+    <h2>Top Brands</h2>
+    <div class="brand-carousel" id="brand-carousel">
+        <img src="https://i5.walmartimages.com/asr/f44132ce-807c-449f-af06-2ab9cbc2bade.945e8615773d52e59006255a5112642d.jpeg" alt="Cetaphil Logo">
+        <img src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1674556171_3-in-1-foundation-sliced_02.jpg" alt="NY Bae Logo">
+        <img src="https://cdn.cliqueinc.com/posts/298322/olaplex-no-7-bonding-oil-review-298322-1646421353749-main.1080x0c.jpg?interlace=true&quality=70" alt="Olaplex Logo">
+        <img src="https://www.afsheenbd.com/wp-content/uploads/2019/04/MAC-Lipstick_Velvet-Teddy.jpg" alt="Mac Logo">
+    </div>
+</section>
+
+<section class="product-section container">
+    <h2>Beauty Tips & Trends</h2>
+    <div class="blog-grid">
+        <div class="blog-card">5 Tips for Hydrated Skin</div>
+        <div class="blog-card">Makeup Looks for Autumn</div>
+        <div class="blog-card">Haircare Routine Essentials</div>
+        <div class="blog-card">Top Trending Lipsticks</div>
+    </div>
+</section>
+
+<section class="newsletter">
+    <h2>Subscribe for Beauty Updates</h2>
+    <form id="newsletter-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</section>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-column">
+            <h4>GlowHub</h4>
+            <p>Your high-end beauty destination</p>
+        </div>
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <a href="shop.html">Shop</a>
+            <a href="new.html">New</a>
+            <a href="sale.html">Sale</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="footer-column">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h4>Payments</h4>
+            <p>Visa, Mastercard, PayPal</p>
+        </div>
+    </div>
+    <p>&copy; 2025 GlowHub. All rights reserved.</p>
+</footer>
+
+<div id="login-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h3>Login to GlowHub</h3>
+        <form id="login-form">
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit" class="btn-primary">Sign In</button>
+            <p class="signup-link">Don't have an account? <a href="#">Sign Up</a></p>
+        </form>
+    </div>
+</div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
